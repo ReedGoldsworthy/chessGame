@@ -19,17 +19,16 @@
 <br />
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/5b5d3eb0-0b83-4317-9a11-6ee2bc4a3784" width="100" height="100">
+<img src="https://github.com/user-attachments/assets/18d92caa-3e60-4868-9849-a70df76683ec" width="250" height="250">
 
-  
 
-  <h3 align="center">Spotify-Util</h3>
+
+  <h3 align="center">Multiplayer Chess</h3>
 
   <p align="center">
-    A utility tool for enhancing Spotify experiences by providing advanced playlist management, detailed data visualizations, and seamless playlist creation.
-    
-  <a href="https://spotify-util.onrender.com/">View Demo » (currently only allowing authorized users full website functionality)</a>
-    .
+    A multiplayer chess engine web app designed to provide advanced game management, detailed move visualizations, and seamless lobby creation.
+  
+
   </p>
 </div>
 
@@ -65,20 +64,19 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![p1](https://github.com/user-attachments/assets/bda599db-97a7-4d00-b6e1-cba9d9b9e404)
 
-**Spotify-Util** is a full-stack web application designed to enhance your Spotify experience by providing advanced playlist management and analysis features. Built with Node.js, Express, MongoDB, and React, this application leverages Spotify's OAuth2 for authentication and API access.
+**Multiplayer Chess** is a full-stack web application designed to allow you to connect with friends and play the game of chess online. Built with Java, Spring Boot, WebSockets, and React, this application offers a seamless and interactive way to play chess virtually with friends in real time.
 
 ### Key Features
 
-- **Spotify OAuth2 Integration**: Securely sign in with Spotify and manage your access tokens and playlists.
-- **Track List Management**: View and sort your playlists in a tabular format, filter tracks by various attributes, and stage songs for further use.
-- **Data Visualization**: Gain insights into your playlists with visualizations including genre breakdowns, top artists, release year graphs, and detailed attribute displays such as Danceability, Energy, and Popularity.
-- **Playlist Creation**: Use the staged songs to create new playlists directly on Spotify, streamlining your music organization process.
+- **Lobby Creation & Multiplayer Support**: Easily create or join lobbies to play live chess games against friends, with real-time updates powered by WebSockets for smooth, responsive gameplay.
+- **Game State Management**: A robust backend in Java and Spring Boot handles game logic, move validation, and player turn tracking, ensuring fair play and consistency.
+- **Move Visualization**: Visualize each move with an intuitive, React-based interface, complete with board highlights and game history tracking for review.
+
 
 ### Purpose
 
-Spotify-Util was developed to provide a more robust tool for analyzing, organizing, and creating playlists. By extending the capabilities of Spotify's built-in features, the application aims to give users a deeper understanding of their music and more control over their playlist creation.
+This Application was developed to provide a sophisticated, real-time multiplayer chess experience. By leveraging Spring Boot for game logic and React for the frontend, the application offers an accessible yet powerful platform for users to enjoy and improve their chess skills with friends online.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,10 +86,10 @@ Spotify-Util was developed to provide a more robust tool for analyzing, organizi
 
 
 
-* <a href="https://nodejs.org/" target="_blank"><img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js" width="150" height="40"/></a>
-* <a href="https://expressjs.com/" target="_blank"><img src="https://img.shields.io/badge/Express.js-%23404d59?style=flat&logo=express&logoColor=%2361DAFB" alt="Express" width="150" height="40"/></a>
-* <a href="https://www.mongodb.com/" target="_blank"><img src="https://img.shields.io/badge/MongoDB-%2347A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" width="150" height="40"/></a>
 * <a href="https://reactjs.org/" target="_blank"><img src="https://img.shields.io/badge/React-%23282c34?style=flat&logo=react&logoColor=%61DAFB" alt="React" width="150" height="40"/></a>
+* <a href="https://www.java.com/" target="_blank"><img src="https://img.shields.io/badge/Java-%23ED8B00?style=flat&logo=java&logoColor=white" alt="Java" width="150" height="40"/></a>
+* <a href="https://spring.io/projects/spring-boot" target="_blank"><img src="https://img.shields.io/badge/Spring%20Boot-%236DB33F?style=flat&logo=springboot&logoColor=white" alt="Spring Boot" width="150" height="40"/></a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" target="_blank"><img src="https://img.shields.io/badge/WebSockets-%230075B4?style=flat&logo=websocket&logoColor=white" alt="WebSockets" width="150" height="40"/></a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,21 +110,15 @@ To get a local copy up and running follow these steps.
 
 ### Installation
 
-1. Create an account then get a Client ID & Client Secret at https://developer.spotify.com/dashboard
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/ReedGoldsworthy/spotify_util.git
+   git clone https://github.com/ReedGoldsworthy/chessGame.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your Client ID & Client Secret in `config.js`
-   ```js
-   const CLIENT_ID = 'ENTER YOUR CLIENT ID';
-   const CLIENT_SECRET = 'ENTER YOUR CLIENT SECRET';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
+3. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
@@ -141,25 +133,7 @@ To get a local copy up and running follow these steps.
 
 ### Demo Video:
 
-### Track List
-- The Track List page allows users to view and manage their playlist tracks in a sortable and filterable table format. Users can sort tracks by various attributes, apply filters to find specific songs, and stage playlists for further use, providing an organized and efficient way to interact with their music collection.
-<p></p>
-
-![stage1](https://github.com/user-attachments/assets/04a0dfe2-3ff1-4060-a643-9260296f7774)
-
-
-### Data Visualization
-- The Data Visualization page provides an interactive overview of playlist data, featuring visualizations such as pie charts for genre breakdowns, graphs for release years, and detailed attribute displays. It helps users analyze their playlists by offering insights into music characteristics like Danceability, Energy, Popularity and more.
-<p></p>
-
-![p1](https://github.com/user-attachments/assets/a43987fb-3f72-43da-bce5-57c55c80f179)
-
-### Create
-- The Create page allows users to assemble staged tracks into new playlists directly on Spotify. It provides an intuitive interface for selecting and organizing songs, facilitating the creation of personalized playlists based on user preferences.
-<p></p>
-
-![create](https://github.com/user-attachments/assets/9c792f1b-d8cd-4005-a067-c5140724b82d)
-
+Demo Video coming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,10 +142,8 @@ To get a local copy up and running follow these steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Change FetchAudioFeatures to fetch multiple songs at once
-- [ ] Make it so CreatePlaylist can create playlists bigger than 100 tracks
-- [ ] Make application follow Spotify's extension request guidelines
-- [ ] Change getAttributes in playlist service to only round values after the averages are computed.
+- [ ] Make it so you can rejoin ongoing games if you close browser
+- [ ] Implement in-game chat
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,10 +187,8 @@ Reed Goldsworthy - Reedgoldsworthy2@gmail.com
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-I would like to acknowledge these music organization services. They were a big inspiration, and are useful tools for organizing music.
+* https://www.geeksforgeeks.org/design-a-chess-game/
 
-* https://www.chosic.com/spotify-playlist-analyzer/
-* http://organizeyourmusic.playlistmachinery.com/index.html
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
