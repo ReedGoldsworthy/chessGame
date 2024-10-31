@@ -101,12 +101,6 @@ This Application was developed to provide a sophisticated, real-time multiplayer
 
 To get a local copy up and running follow these steps.
 
-### Prerequisites
-
-* Download npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
@@ -114,9 +108,12 @@ To get a local copy up and running follow these steps.
    ```sh
    git clone https://github.com/ReedGoldsworthy/chessGame.git
    ```
-2. Install NPM packages
+2. Set root and run application
    ```sh
-   npm install
+
+   set your-repo\chessGame\chessGame\src as root
+   run your-repo\chessGame\src\main\java\com\chessgame\chessgame\ChessGameApplication
+   
    ```
 3. Change git remote url to avoid accidental pushes to base project
    ```sh
